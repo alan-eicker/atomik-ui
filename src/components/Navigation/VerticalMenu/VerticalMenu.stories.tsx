@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { VerticalMenu, MenuItem } from './VerticalMenu';
 
 const meta: Meta<typeof VerticalMenu> = {
   title: 'Navigation/VerticalMenu',
   component: VerticalMenu,
   tags: ['autodocs'],
-  subcomponents: { MenuItem } as any,
+  subcomponents: { MenuItem } as Record<string, unknown>,
 };
 
 export default meta;

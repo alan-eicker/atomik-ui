@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { CreditCardInput } from './CreditCardInput';
 import { useState } from 'react';
 
@@ -11,7 +11,7 @@ const meta: Meta<typeof CreditCardInput> = {
 export default meta;
 type Story = StoryObj<typeof CreditCardInput>;
 
-const InteractiveInput = (args: any) => {
+const InteractiveInput = (args: Record<string, unknown>) => {
     const [val, setVal] = useState('');
     return <CreditCardInput {...args} value={val} onChange={setVal} />;
 };

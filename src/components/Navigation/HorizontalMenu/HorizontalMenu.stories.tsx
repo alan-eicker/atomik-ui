@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { HorizontalMenu, MenuItem } from './HorizontalMenu';
 
 const meta: Meta<typeof HorizontalMenu> = {
   title: 'Navigation/HorizontalMenu',
   component: HorizontalMenu,
   tags: ['autodocs'],
-  subcomponents: { MenuItem } as any, // Cast to any to avoid type issues with subcomponents in some older SB versions or generic types
+  subcomponents: { MenuItem } as Record<string, unknown>, // Cast to any to avoid type issues with subcomponents in some older SB versions or generic types
 };
 
 export default meta;

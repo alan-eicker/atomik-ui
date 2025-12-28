@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Truncate } from './Truncate';
 
 const meta: Meta<typeof Truncate> = {

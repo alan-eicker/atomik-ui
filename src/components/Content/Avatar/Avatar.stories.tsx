@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Avatar } from './Avatar';
 
 const meta: Meta<typeof Avatar> = {
@@ -21,7 +21,7 @@ export const Default: Story = {
 
 export const WithImage: Story = {
   args: {
-    src: 'https://via.placeholder.com/150',
+    src: 'https://miro.medium.com/v2/resize:fit:2400/1*fzxR1Mqh6a_uSgPbxSnX2A.png',
     alt: 'User Avatar',
   },
 };

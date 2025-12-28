@@ -14,13 +14,24 @@ export interface AvatarProps {
   className?: string;
 }
 
-export const Avatar = ({ src, alt = 'Avatar', initials, size = 'medium', className = '' }: AvatarProps) => {
+export const Avatar = (props: AvatarProps) => {
+  const { src, alt = 'Avatar', initials, size = 'medium', className = '' } = props;
+
+  const [imgError, setImgError] = React.useState(false);
+
+  const fallbackSrc = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/250px-Default_pfp.svg.png';
+  
   return (
     <div className={`${styles.avatar} ${styles[size]} ${className}`}>
       {src ? (
-        <img src={src} alt={alt} className={styles.img} />
+        <img 
+          src={imgError ? fallbackSrc : src} 
+          alt={alt} 
+          className={styles.img} 
+          onError={() => setImgError(true)}
+        />
       ) : (
-        <span>{initials || '?'}</span>
+        <span className={styles.initials}>{initials || '?'}</span>
       )}
     </div>
   );
