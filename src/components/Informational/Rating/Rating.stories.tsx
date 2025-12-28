@@ -29,11 +29,9 @@ export const ReadOnly: Story = {
   },
 };
 
-const InteractiveRating = () => {
+export const Interactive: Story = {
+  render: () => {
     const [rating, setRating] = useState(0);
     return <Rating value={rating} onChange={setRating} />;
-}
-
-export const Interactive: Story = {
-  render: () => <InteractiveRating />,
+  }
 };
