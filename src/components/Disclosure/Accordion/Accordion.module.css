@@ -28,17 +28,22 @@
 }
 
 .panel {
-  padding: 16px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out;
   background-color: #fff;
-  display: none;
 }
 
 .panel.open {
-  display: block;
+  height: auto;
+}
+
+.panelContent {
+  padding: 16px;
 }
 
 .icon {
-  transition: transform 0.2s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .icon.open {
