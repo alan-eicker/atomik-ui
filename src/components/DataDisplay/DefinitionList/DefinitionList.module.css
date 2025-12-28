@@ -1,0 +1,15 @@
+.list {
+  display: block;
+}
+
+.term {
+  font-weight: 600;
+  margin-top: 12px;
+  color: #333;
+}
+
+.description {
+  margin-left: 0;
+  margin-bottom: 8px;
+  color: #666;
+}

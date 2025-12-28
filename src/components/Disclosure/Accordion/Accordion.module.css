@@ -1,0 +1,46 @@
+.accordion {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.header {
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  user-select: none;
+}
+
+.header:hover {
+  background-color: #f0f0f0;
+}
+
+.panel {
+  padding: 16px;
+  background-color: #fff;
+  display: none;
+}
+
+.panel.open {
+  display: block;
+}
+
+.icon {
+  transition: transform 0.2s;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}

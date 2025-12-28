@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  padding-right: 40px; /* space for icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: monospace; /* Monospace for card numbers usually looks better */
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.input.error {
+  border-color: #dc3545;
+}
+
+.input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.icon {
+  position: absolute;
+  right: 12px;
+  color: #999;
+  pointer-events: none;
+  font-size: 20px;
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: #dc3545;
+}

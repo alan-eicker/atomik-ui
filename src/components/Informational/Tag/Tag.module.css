@@ -1,0 +1,39 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  transition: all 0.2s;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  margin-left: 6px;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  color: #666;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.closeButton:hover {
+  color: #333;
+}

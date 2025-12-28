@@ -1,0 +1,52 @@
+.group {
+  display: inline-flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.group > button {
+  border-radius: 0;
+  margin: 0;
+  border: 1px solid #ccc; /* assuming default button styles need override or unification */
+  border-right-width: 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #333;
+}
+
+.group > button:last-child {
+  border-right-width: 1px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.group > button:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.group > button:hover {
+  background-color: #e2e6ea;
+  z-index: 1; /* bring border on top */
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.vertical > button {
+  border-right-width: 1px;
+  border-bottom-width: 0;
+  width: 100%;
+}
+
+.vertical > button:last-child {
+  border-bottom-width: 1px;
+  border-radius: 0 0 4px 4px;
+}
+
+.vertical > button:first-child {
+  border-radius: 4px 4px 0 0;
+}

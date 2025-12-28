@@ -1,0 +1,21 @@
+.list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.ordered {
+  list-style-type: decimal;
+}
+
+.unordered {
+  list-style-type: disc;
+}
+
+.none {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.item {
+  margin-bottom: 4px;
+}

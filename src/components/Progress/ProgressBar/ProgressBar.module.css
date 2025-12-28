@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 16px;
+}
+
+.bar {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.success {
+  background-color: #28a745;
+}
+
+.warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.danger {
+  background-color: #dc3545;
+}
+
+.striped {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+.animated {
+  animation: progressBarStripes 1s linear infinite;
+}
+
+@keyframes progressBarStripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
